@@ -1,15 +1,1664 @@
 <!DOCTYPE html>
-<html lang='en'>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
+<!--[if IE ]>      <html lang="en" xmlns:fb="http://ogp.me/ns/fb#" class="ie"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en" xmlns:fb="http://ogp.me/ns/fb#"> <!--<![endif]-->
 
-    <title>cryo.github.io</title>
+<head>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-type'>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"2700af8a3c","applicationID":"11195121","transactionName":"c1xdF0ENClwHEU5QVlNcRg1HTRZCCxkEQhpZXVcGSw==","queueTime":0,"applicationTime":2147,"agent":""}</script>
+<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VwUGVl5VGwIBVVhXBgMG"};window.NREUM||(NREUM={}),__nr_require=function(t,n,e){function r(e){if(!n[e]){var o=n[e]={exports:{}};t[e][0].call(o.exports,function(n){var o=t[e][1][n];return r(o||n)},o,o.exports)}return n[e].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<e.length;o++)r(e[o]);return r}({1:[function(t,n,e){function r(t){try{s.console&&console.log(t)}catch(n){}}var o,i=t("ee"),a=t(15),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,n,e){r(e.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,n){return t}).join(", ")))},{}],2:[function(t,n,e){function r(t,n,e,r,s){try{p?p-=1:o(s||new UncaughtException(t,n,e),!0)}catch(f){try{i("ierr",[f,c.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,n,e){this.message=t||"Uncaught error with no additional information",this.sourceURL=n,this.line=e}function o(t,n){var e=n?null:c.now();i("err",[t,e])}var i=t("handle"),a=t(16),s=t("ee"),c=t("loader"),f=t("gos"),u=window.onerror,d=!1,l="nr@seenError",p=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(8),t(7),"addEventListener"in window&&t(5),c.xhrWrappable&&t(9),d=!0)}s.on("fn-start",function(t,n,e){d&&(p+=1)}),s.on("fn-err",function(t,n,e){d&&!e[l]&&(f(e,l,function(){return!0}),this.thrown=!0,o(e))}),s.on("fn-end",function(){d&&!this.thrown&&p>0&&(p-=1)}),s.on("internal-error",function(t){i("ierr",[t,c.now(),!0])})},{}],3:[function(t,n,e){t("loader").features.ins=!0},{}],4:[function(t,n,e){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),s=t(7),c="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,w="fn"+h,v="bstTimer",y="pushState",g=t("loader");g.features.stn=!0,t(6);var b=NREUM.o.EV;o.on(m,function(t,n){var e=t[0];e instanceof b&&(this.bstStart=g.now())}),o.on(w,function(t,n){var e=t[0];e instanceof b&&i("bst",[e,n,this.bstStart,g.now()])}),a.on(m,function(t,n,e){this.bstStart=g.now(),this.bstType=e}),a.on(w,function(t,n){i(v,[n,this.bstStart,g.now(),this.bstType])}),s.on(m,function(){this.bstStart=g.now()}),s.on(w,function(t,n){i(v,[n,this.bstStart,g.now(),"requestAnimationFrame"])}),o.on(y+p,function(t){this.time=g.now(),this.startPath=location.pathname+location.hash}),o.on(y+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+c]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+c]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+c]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,n,e){function r(t){for(var n=t;n&&!n.hasOwnProperty(u);)n=Object.getPrototypeOf(n);n&&o(n)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,n){return t[1]}var a=t("ee").get("events"),s=t(18)(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";n.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,n){var e=t[1],r=c(e,"nr@wrapped",function(){function t(){if("function"==typeof e.handleEvent)return e.handleEvent.apply(e,arguments)}var n={object:t,"function":e}[typeof e];return n?s(n,"fn-",null,n.name||"anonymous"):e});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],6:[function(t,n,e){var r=t("ee").get("history"),o=t(18)(r);n.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],7:[function(t,n,e){var r=t("ee").get("raf"),o=t(18)(r),i="equestAnimationFrame";n.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,n,e){function r(t,n,e){t[0]=a(t[0],"fn-",null,e)}function o(t,n,e){this.method=e,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,e)}var i=t("ee").get("timer"),a=t(18)(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";n.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],9:[function(t,n,e){function r(t,n){d.inPlace(n,["onreadystatechange"],"fn-",s)}function o(){var t=this,n=u.context(t);t.readyState>3&&!n.resolved&&(n.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,y,"fn-",s)}function i(t){g.push(t),h&&(x?x.then(a):w?w(a):(E=-E,O.data=E))}function a(){for(var t=0;t<g.length;t++)r([],g[t]);g.length&&(g=[])}function s(t,n){return n}function c(t,n){for(var e in t)n[e]=t[e];return n}t(5);var f=t("ee"),u=f.get("xhr"),d=t(18)(u),l=NREUM.o,p=l.XHR,h=l.MO,m=l.PR,w=l.SI,v="readystatechange",y=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],g=[];n.exports=u;var b=window.XMLHttpRequest=function(t){var n=new p(t);try{u.emit("new-xhr",[n],n),n.addEventListener(v,o,!1)}catch(e){try{u.emit("internal-error",[e])}catch(r){}}return n};if(c(p,b),b.prototype=p.prototype,d.inPlace(b.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,n){r(t,n),i(n)}),u.on("open-xhr-start",r),h){var x=m&&m.resolve();if(!w&&!m){var E=1,O=document.createTextNode(E);new h(a).observe(O,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===v||a()})},{}],10:[function(t,n,e){function r(t){var n=this.params,e=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<d;r++)t.removeEventListener(u[r],this.listener,!1);if(!n.aborted){if(e.duration=a.now()-this.startTime,4===t.readyState){n.status=t.status;var i=o(t,this.lastSize);if(i&&(e.rxSize=i),this.sameOrigin){var c=t.getResponseHeader("X-NewRelic-App-Data");c&&(n.cat=c.split(", ").pop())}}else n.status=0;e.cbTime=this.cbTime,f.emit("xhr-done",[t],t),s("xhr",[n,e,this.startTime])}}}function o(t,n){var e=t.responseType;if("json"===e&&null!==n)return n;var r="arraybuffer"===e||"blob"===e||"json"===e?t.response:t.responseText;return h(r)}function i(t,n){var e=c(n),r=t.params;r.host=e.hostname+":"+e.port,r.pathname=e.pathname,t.sameOrigin=e.sameOrigin}var a=t("loader");if(a.xhrWrappable){var s=t("handle"),c=t(11),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,l=t("id"),p=t(14),h=t(13),m=window.XMLHttpRequest;a.features.xhr=!0,t(9),f.on("new-xhr",function(t){var n=this;n.totalCbs=0,n.called=0,n.cbTime=0,n.end=r,n.ended=!1,n.xhrGuids={},n.lastSize=null,p&&(p>34||p<10)||window.opera||t.addEventListener("progress",function(t){n.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,n){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&n.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,n){var e=this.metrics,r=t[0],o=this;if(e&&r){var i=h(r);i&&(e.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof n.onload))&&o.end(n)}catch(e){try{f.emit("internal-error",[e])}catch(r){}}};for(var s=0;s<d;s++)n.addEventListener(u[s],this.listener,!1)}),f.on("xhr-cb-time",function(t,n,e){this.cbTime+=t,n?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof e.onload||this.end(e)}),f.on("xhr-load-added",function(t,n){var e=""+l(t)+!!n;this.xhrGuids&&!this.xhrGuids[e]&&(this.xhrGuids[e]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,n){var e=""+l(t)+!!n;this.xhrGuids&&this.xhrGuids[e]&&(delete this.xhrGuids[e],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,n){n instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],n)}),f.on("removeEventListener-end",function(t,n){n instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],n)}),f.on("fn-start",function(t,n,e){n instanceof m&&("onload"===e&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),f.on("fn-end",function(t,n){this.xhrCbStart&&f.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,n],n)})}},{}],11:[function(t,n,e){n.exports=function(t){var n=document.createElement("a"),e=window.location,r={};n.href=t,r.port=n.port;var o=n.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=n.hostname||e.hostname,r.pathname=n.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!n.protocol||":"===n.protocol||n.protocol===e.protocol,a=n.hostname===document.domain&&n.port===e.port;return r.sameOrigin=i&&(!n.hostname||a),r}},{}],12:[function(t,n,e){function r(){}function o(t,n,e){return function(){return i(t,[f.now()].concat(s(arguments)),n?null:this,e),n?void 0:this}}var i=t("handle"),a=t(15),s=t(16),c=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(d,function(t,n){u[n]=o(l+n,!0,"api")}),u.addPageAction=o(l+"addPageAction",!0),u.setCurrentRouteName=o(l+"routeName",!0),n.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,n){var e={},r=this,o="function"==typeof n;return i(p+"tracer",[f.now(),t,e],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],e),o)try{return n.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],e),t}finally{c.emit("fn-end",[f.now()],e)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,n){h[n]=o(p+n)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now()])}},{}],13:[function(t,n,e){n.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(n){return}}}},{}],14:[function(t,n,e){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),n.exports=r},{}],15:[function(t,n,e){function r(t,n){var e=[],r="",i=0;for(r in t)o.call(t,r)&&(e[i]=n(r,t[r]),i+=1);return e}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],16:[function(t,n,e){function r(t,n,e){n||(n=0),"undefined"==typeof e&&(e=t?t.length:0);for(var r=-1,o=e-n||0,i=Array(o<0?0:o);++r<o;)i[r]=t[n+r];return i}n.exports=r},{}],17:[function(t,n,e){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],18:[function(t,n,e){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(16),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;n.exports=function(t,n){function e(t,n,e,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof e?e(r,a):e||{}}catch(f){l([f,"",[r,a,o],s])}u(n+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(d){throw u(n+"err",[r,a,d],s),d}finally{u(n+"end",[r,a,c],s)}}return r(t)?t:(n||(n=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,n,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<n.length;c++)s=n[c],a=t[s],r(a)||(t[s]=e(a,f?s+o:o,i,s))}function u(e,r,o){if(!c||n){var i=c;c=!0;try{t.emit(e,r,o,n)}catch(a){l([a,e,r,o])}c=i}}function d(t,n){if(Object.defineProperty&&Object.keys)try{var e=Object.keys(t);return e.forEach(function(e){Object.defineProperty(n,e,{get:function(){return t[e]},set:function(n){return t[e]=n,n}})}),n}catch(r){l([r])}for(var o in t)s.call(t,o)&&(n[o]=t[o]);return n}function l(n){try{t.emit("internal-error",n)}catch(e){}}return t||(t=o),e.inPlace=f,e.flag=a,e}},{}],ee:[function(t,n,e){function r(){}function o(t){function n(t){return t&&t instanceof r?t:t?c(t,s,i):i()}function e(e,r,o,i){if(!l.aborted||i){t&&t(e,r,o);for(var a=n(o),s=h(e),c=s.length,f=0;f<c;f++)s[f].apply(a,r);var d=u[y[e]];return d&&d.push([g,e,r,a]),a}}function p(t,n){v[t]=h(t).concat(n)}function h(t){return v[t]||[]}function m(t){return d[t]=d[t]||o(e)}function w(t,n){f(t,function(t,e){n=n||"feature",y[e]=n,n in u||(u[n]=[])})}var v={},y={},g={on:p,emit:e,get:m,listeners:h,context:n,buffer:w,abort:a,aborted:!1};return g}function i(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var s="nr@context",c=t("gos"),f=t(15),u={},d={},l=n.exports=o();l.backlog=u},{}],gos:[function(t,n,e){function r(t,n,e){if(o.call(t,n))return t[n];var r=e();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(t,n,e){function r(t,n,e,r){o.buffer([t],r),o.emit(t,n,e)}var o=t("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(t,n,e){function r(t){var n=typeof t;return!t||"object"!==n&&"function"!==n?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");n.exports=r},{}],loader:[function(t,n,e){function r(){if(!x++){var t=b.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&n))return u.abort();f(y,function(n,e){t[n]||(t[n]=e)}),c("mark",["onload",a()+b.offset],null,"api");var e=l.createElement("script");e.src="https://"+t.agent,n.parentNode.insertBefore(e,n)}}function o(){"complete"===l.readyState&&i()}function i(){c("mark",["domContent",a()+b.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(s=Math.max((new Date).getTime(),s))-b.offset}var s=(new Date).getTime(),c=t("handle"),f=t(15),u=t("ee"),d=window,l=d.document,p="addEventListener",h="attachEvent",m=d.XMLHttpRequest,w=m&&m.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:m,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},g=m&&w&&w[p]&&!/CriOS/.test(navigator.userAgent),b=n.exports={offset:s,now:a,origin:v,features:{},xhrWrappable:g};t(12),l[p]?(l[p]("DOMContentLoaded",i,!1),d[p]("load",r,!1)):(l[h]("onreadystatechange",o),d[h]("onload",r)),c("mark",["firstbyte",s],null,"api");var x=0,E=t(17)},{}]},{},["loader",2,10,4,3]);</script>
+<meta content='width=device-width, initial-scale=1.0' name='viewport'>
+<meta content='app-id=927194858' name='apple-itunes-app'>
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="myblKgPh0PVSvKyZTw+ANlUVhczwsmYk1wPYN2Dn+kTb7ClzVxEDWGTFHAAvq7y3iqUiwCnu6gditijGkRImXA==" />
+<!-- Open Graph protocol: -->
+<meta property='og:logo' content='https://www.codeschool.com/assets/meta/og-logo-c95fcf45b709b6f818fa95abff33fe2df595837a399c13b8516e7a486e9746eb.png' />
+<meta property='og:title' content='My Rewards | Code School' />
 
-  </head>
-  <body>
-    <h1>Cryobiochem's Unique Repository</h1>
-    <h2>Test my code here, just copy-paste</h2>
-  </body>
-</html>
+<meta property='og:type' content='website' />
+<meta property='og:locale' content='en_US' />
+<meta property='og:url' content='https://www.codeschool.com/account/prizes' />
+<meta property='og:image' content='https://www.codeschool.com/assets/meta/og-avatar-541739b5880b8586eeb033747a8a2cf3e689860d59b506d29a9633aed86d057d.png' />
+<meta property='og:site_name' content='Code School' />
+<meta property='fb:admins' content='507374956' />
+<meta property='fb:app_id' content='354557504622893' />
+
+<title>My Rewards | Code School</title>
+<link href='/assets/meta/favicon-dc00dc0d406d87035ef0c62fdb78aad90c6b6bd1905e1edada1a7f04c4bcc819.ico' rel='shortcut icon' type='image/x-icon'>
+<link href='/assets/meta/apple-touch-icon-180x180-ea470bcaff92a466ac467df2746cd1e5f49e06c73ecb923871c502a7d72ade2d.png' rel='apple-touch-icon'>
+<link href='/assets/meta/apple-touch-icon-192x192-7c4606a12d68cd31a58128d9a79471f09a5654503ec176318400ce9f496c1d00.png' rel='icon' sizes='192x192'>
+
+
+<meta content='noindex' name='robots'>
+<meta content='noindex' name='googlebot'>
+
+<link rel="stylesheet" media="screen" href="/assets/application-2e7653aa7efe37cb931ec5b255fd9acceae4211a13e077e295a2bb07b554e83c.css" />
+<link rel="stylesheet" media="screen" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" />
+
+
+<link type="application/opensearchdescription+xml" rel="search" href="https://www.codeschool.com/opensearch.xml"/>
+
+
+</head>
+<body class='body--footer prizes prizes-index' data-page='account:prizes:index'>
+<a class="skip js-skipToContent" tabindex="1" href="#">Skip to content</a>
+<div class='dn db--m' data-sidebar=''></div>
+<ul class='js-note has-note'></ul>
+
+<div class='banner banner--sunset-announcement js-sunset-announcement-banner is-hidden'>
+<p class='banner-title dib--m twsb'>
+<span class='tcc twb'>
+A new learning experience is coming! Discover the interactivity of Code School on Pluralsight.
+<a class="btn btn--sunset mls" href="http://www.pluralsight.com/codeschool/customer">Learn more</a>
+</span>
+<a class="close banner-close js-sunset-announcement-banner-close" href="#"><b class='srt'>Close</b>
+</a></p>
+</div>
+<header class='header row row--a has-dropdown js-navToggle-container' role='banner'>
+<div class='cell header-cell'>
+<div class='header-item prm' itemscope itemtype='http://schema.org/Organization'>
+<a class="brand-link" itemprop="url" href="/account"><img alt="Code School" class="brand-img" itemprop="logo" src="/assets/logos/logo-code-school-ps-af6d2dac2b8f78566e48a0e451a9233894464e64927376b87d88402aebb76803.svg" />
+</a></div>
+<div class='header-item header-item--grow sentry is-waiting' id='main_nav'>
+<nav class='nav' id='site-navigation' role='navigation'>
+<a class="nav-menu fr" href="#"><div class='nav-box'></div>
+<div class='nav-menu-stack'>
+<b class='srt'>Menu</b>
+</div>
+</a><ol class='nav-list list list--object list--object--l list--object--single fx fxaic'>
+<li class='nav-item list-item'><a class="nav-item-link list-item-link" href="https://www.codeschool.com/learn">Courses</a></li>
+<li class='nav-item list-item'>
+<a class="nav-item-link list-item-link" href="https://www.codeschool.com/screencasts">Screencasts</a>
+</li>
+<li class='nav-item list-item'>
+<a class="nav-item-link list-item-link" data-segment-link="User Clicked Enroll" data-segment-properties="{&quot;source&quot;:&quot;Main Navigation&quot;}" href="/pricing">Pricing</a>
+</li>
+<li class='nav-item nav-item--btn list-item'>
+</li>
+<li class='nav-item list-item'>
+<a class="nav-item-link list-item-link" href="https://www.codeschool.com/users/sign_in">Sign in</a>
+</li>
+</ol>
+</nav>
+</div>
+</div>
+</header>
+
+<div class='js-skipToContent-content' tabindex='-1'></div>
+<div class='row cb'>
+<div class='cell mtm'>
+<nav class='list list--inline nav nav--sub' id='account-navigation'>
+<select class='nav-select js-selectTrigger'>
+<option value='/account'>My Dashboard</option>
+<option value='/account/subscription/transactions'>History</option>
+<option selected='selected' value='/account/prizes'>Rewards</option>
+</select>
+<ul class='nav-list list dn db--m'>
+<li class='nav-item list-item'>
+<a class="nav-item-link list-item-link" href="/account">My Dashboard</a>
+</li>
+<li class='nav-item list-item'>
+<a class="nav-item-link list-item-link" href="/account/subscription/transactions">History</a>
+</li>
+<li class='is-active list-item nav-item'>
+<a class="nav-item-link list-item-link" href="/account/prizes">Rewards</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+
+
+<main class='content' role='main'><div class='row'>
+<div class='cell cell--s well'>
+<div class='mbl'></div>
+<div class='mbl'>
+<h1 class='mbs'>My Badges</h1>
+<div class='card card--b mbm'>
+<div class='bucket bucket--flag'>
+<div class='bucket-media'>
+<div class='badge'>
+<img alt="Breaking the Ice with Regular Expressions" class="badge-img" data-original-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/524/breaking-the-ice-with-regular-expressions-07f250b8acc97e47f862e00b1f5115b2.png" id="badge-524" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/524/breaking-the-ice-with-regular-expressions-07f250b8acc97e47f862e00b1f5115b2.png" />
+</div>
+</div>
+<div class='bucket-content'>
+<ol class='list list--object'>
+<li class='badge--inactive list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/519"><img alt="Level 1 on Breaking the Ice with Regular Expressions" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/519/level-1-on-breaking-the-ice-with-regular-expressions-91c2cacad20b86797199e1c19fe5973a.png" data-large-badge-id="badge-524" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/519/level-1-on-breaking-the-ice-with-regular-expressions-91c2cacad20b86797199e1c19fe5973a.png" />
+</a></div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div class='card card--b mbm'>
+<div class='bucket bucket--flag'>
+<div class='bucket-media'>
+<div class='badge'>
+<img alt="On Track With Golang" class="badge-img" data-original-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/668/on-track-with-golang-ef3c590cedb107596df2a3ffdc305f70.png" id="badge-668" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/668/on-track-with-golang-ef3c590cedb107596df2a3ffdc305f70.png" />
+</div>
+</div>
+<div class='bucket-content'>
+<ol class='list list--object'>
+<li class='badge--inactive list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/663"><img alt="Level 1 on On Track With Golang" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/663/level-1-on-on-track-with-golang-5c167830abf2b446c1d3d782c3f15930.png" data-large-badge-id="badge-668" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/663/level-1-on-on-track-with-golang-5c167830abf2b446c1d3d782c3f15930.png" />
+</a></div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div class='card card--b mbm'>
+<div class='bucket bucket--flag'>
+<div class='bucket-media'>
+<div class='badge'>
+<img alt="The Magical Marvels of MongoDB" class="badge-img" data-original-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/539/the-magical-marvels-of-mongodb-1f09c10dfafb300ce53d2d339fdc299c.png" id="badge-539" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/539/the-magical-marvels-of-mongodb-1f09c10dfafb300ce53d2d339fdc299c.png" />
+</div>
+</div>
+<div class='bucket-content'>
+<ol class='list list--object'>
+<li class='badge--inactive list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/540"><img alt="Level 1 on The Magical Marvels of MongoDB" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/540/level-1-on-the-magical-marvels-of-mongodb-b8ff6f0cdcaed6b7cfdbb71087230fa6.png" data-large-badge-id="badge-539" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/540/level-1-on-the-magical-marvels-of-mongodb-b8ff6f0cdcaed6b7cfdbb71087230fa6.png" />
+</a></div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div class='card card--b mbm'>
+<div class='bucket bucket--flag'>
+<div class='bucket-media'>
+<div class='badge'>
+<img alt="Course Complete" class="badge-img" data-original-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/518/course-complete-61a5b8d40f49efccf26fd3e84619545b.png" id="badge-518" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/518/course-complete-61a5b8d40f49efccf26fd3e84619545b.png" />
+</div>
+</div>
+<div class='bucket-content'>
+<ol class='list list--object'>
+<li class='badge--inactive list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/513"><img alt="Level 1 on The Sequel to SQL" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/513/level-1-on-the-sequel-to-sql-e1ab0eb7c5188c529a85e0444ae03249.png" data-large-badge-id="badge-518" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/513/level-1-on-the-sequel-to-sql-e1ab0eb7c5188c529a85e0444ae03249.png" />
+</a></div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div class='card card--b mbm'>
+<div class='bucket bucket--flag'>
+<div class='bucket-media'>
+<div class='badge'>
+<img alt="Completed Git Real 2" class="badge-img" data-original-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/252/completed-git-real-2-70d7411574c89345143dd795086378c9.png" id="badge-252" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/252/completed-git-real-2-70d7411574c89345143dd795086378c9.png" />
+</div>
+</div>
+<div class='bucket-content'>
+<ol class='list list--object'>
+<li class='badge--inactive list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/253"><img alt="Level 1 on Git Real 2" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/253/level-1-on-git-real-2-2097ab2494d2f2c17341e76cc5f8830a.png" data-large-badge-id="badge-252" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/253/level-1-on-git-real-2-2097ab2494d2f2c17341e76cc5f8830a.png" />
+</a></div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div class='card card--b mbm'>
+<div class='bucket bucket--flag'>
+<div class='bucket-media'>
+<div class='badge'>
+<img alt="Completed Git Real" class="badge-img" data-original-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/125/completed-git-real-0401f78ab2d83cdca3a6976987a531d4.png" id="badge-125" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/125/completed-git-real-0401f78ab2d83cdca3a6976987a531d4.png" />
+</div>
+</div>
+<div class='bucket-content'>
+<ol class='list list--object'>
+<li class='badge--inactive list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/126"><img alt="Level 1 on Git Real" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/126/level-1-on-git-real-408eb3872930209fd4b302fb2f2ccb3c.png" data-large-badge-id="badge-125" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/126/level-1-on-git-real-408eb3872930209fd4b302fb2f2ccb3c.png" />
+</a></div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div class='card card--b mbm'>
+<div class='bucket bucket--flag'>
+<div class='bucket-media'>
+<div class='badge mbm mbf--m'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/385"><img alt="Completed Exploring Google Maps for iOS" class="badge-img" data-original-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/385/completed-exploring-google-maps-for-ios-e91f4a65f676703091a312d8bc05393d.png" id="badge-385" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/385/completed-exploring-google-maps-for-ios-e91f4a65f676703091a312d8bc05393d.png" />
+</a></div>
+</div>
+<div class='bucket-content'>
+<ol class='list list--object'>
+<li class='list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/386"><img alt="Level 1 on Exploring Google Maps for iOS" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/386/level-1-on-exploring-google-maps-for-ios-dbfa0ad4713cff5a1289f2595aa4c4e9.png" data-large-badge-id="badge-385" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/386/level-1-on-exploring-google-maps-for-ios-dbfa0ad4713cff5a1289f2595aa4c4e9.png" />
+</a></div>
+</li>
+<li class='list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/387"><img alt="Level 2 on Exploring Google Maps for iOS" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/387/level-2-on-exploring-google-maps-for-ios-17fc498c2408cb0114337494661de089.png" data-large-badge-id="badge-385" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/387/level-2-on-exploring-google-maps-for-ios-17fc498c2408cb0114337494661de089.png" />
+</a></div>
+</li>
+<li class='list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/388"><img alt="Level 3 on Exploring Google Maps for iOS" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/388/level-3-on-exploring-google-maps-for-ios-6ad05da541c62e603f343df8b9241bb3.png" data-large-badge-id="badge-385" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/388/level-3-on-exploring-google-maps-for-ios-6ad05da541c62e603f343df8b9241bb3.png" />
+</a></div>
+</li>
+<li class='list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/389"><img alt="Level 4 on Exploring Google Maps for iOS" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/389/level-4-on-exploring-google-maps-for-ios-d3965d3a5fe915e2103171b2095eedad.png" data-large-badge-id="badge-385" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/389/level-4-on-exploring-google-maps-for-ios-d3965d3a5fe915e2103171b2095eedad.png" />
+</a></div>
+</li>
+<li class='list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/390"><img alt="Level 5 on Exploring Google Maps for iOS" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/390/level-5-on-exploring-google-maps-for-ios-5671afecc1ae3a005cc51c137bbdd474.png" data-large-badge-id="badge-385" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/390/level-5-on-exploring-google-maps-for-ios-5671afecc1ae3a005cc51c137bbdd474.png" />
+</a></div>
+</li>
+<li class='list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/391"><img alt="Level 6 on Exploring Google Maps for iOS" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/391/level-6-on-exploring-google-maps-for-ios-23911c4e57b34fcda197ff2465263293.png" data-large-badge-id="badge-385" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/391/level-6-on-exploring-google-maps-for-ios-23911c4e57b34fcda197ff2465263293.png" />
+</a></div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div class='card card--b mbm'>
+<div class='bucket bucket--flag'>
+<div class='bucket-media'>
+<div class='badge'>
+<img alt="Completed iOS Operation: MapKit" class="badge-img" data-original-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/259/completed-ios-operation-mapkit-97e67d7e7ac3c8111098274ad072ac23.png" id="badge-259" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/259/completed-ios-operation-mapkit-97e67d7e7ac3c8111098274ad072ac23.png" />
+</div>
+</div>
+<div class='bucket-content'>
+<ol class='list list--object'>
+<li class='badge--inactive list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/260"><img alt="Level 1 on iOS Operation: MapKit" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/260/level-1-on-ios-operation-mapkit-52545a04e0d5ea3af4d8d90fe3ad1af3.png" data-large-badge-id="badge-259" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/260/level-1-on-ios-operation-mapkit-52545a04e0d5ea3af4d8d90fe3ad1af3.png" />
+</a></div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div class='card card--b mbm'>
+<div class='bucket bucket--flag'>
+<div class='bucket-media'>
+<div class='badge'>
+<img alt="Completed Core iOS 7" class="badge-img" data-original-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/306/completed-core-ios-7-1a959e081035f3ca3a592ecc8ab99c6c.png" id="badge-306" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/306/completed-core-ios-7-1a959e081035f3ca3a592ecc8ab99c6c.png" />
+</div>
+</div>
+<div class='bucket-content'>
+<ol class='list list--object'>
+<li class='badge--inactive list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/307"><img alt="Level 1 on Core iOS 7" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/307/level-1-on-core-ios-7-45046cadb933cc707038d10dccb28110.png" data-large-badge-id="badge-306" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/307/level-1-on-core-ios-7-45046cadb933cc707038d10dccb28110.png" />
+</a></div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div class='card card--b mbm'>
+<div class='bucket bucket--flag'>
+<div class='bucket-media'>
+<div class='badge'>
+<img alt="Completed iOS: Operation Models" class="badge-img" data-original-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/239/completed-ios-operation-models-85575233fe0938a46405060a96121d8d.png" id="badge-239" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/239/completed-ios-operation-models-85575233fe0938a46405060a96121d8d.png" />
+</div>
+</div>
+<div class='bucket-content'>
+<ol class='list list--object'>
+<li class='badge--inactive list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/240"><img alt="Level 1 on iOS: Operation Models" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/240/level-1-on-ios-operation-models-8c44953b6d47160162b8fb5a541aeb79.png" data-large-badge-id="badge-239" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/240/level-1-on-ios-operation-models-8c44953b6d47160162b8fb5a541aeb79.png" />
+</a></div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div class='card card--b mbm'>
+<div class='bucket bucket--flag'>
+<div class='bucket-media'>
+<div class='badge'>
+<img alt="Completed Try iOS" class="badge-img" data-original-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/162/completed-try-ios-db05f0ded51e402d88cb960af4e152f0.png" id="badge-162" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/162/completed-try-ios-db05f0ded51e402d88cb960af4e152f0.png" />
+</div>
+</div>
+<div class='bucket-content'>
+<ol class='list list--object'>
+<li class='badge--inactive list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/163"><img alt="Level 1 on Try iOS" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/163/level-1-on-try-ios-da10353e219106b302165a15a1b1341f.png" data-large-badge-id="badge-162" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/163/level-1-on-try-ios-da10353e219106b302165a15a1b1341f.png" />
+</a></div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div class='card card--b mbm'>
+<div class='bucket bucket--flag'>
+<div class='bucket-media'>
+<div class='badge'>
+<img alt="App Evolution With Swift" class="badge-img" data-original-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/587/app-evolution-with-swift-b8f38def617f774e6f7cb4e3e845b146.png" id="badge-587" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/587/app-evolution-with-swift-b8f38def617f774e6f7cb4e3e845b146.png" />
+</div>
+</div>
+<div class='bucket-content'>
+<ol class='list list--object'>
+<li class='badge--inactive list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/588"><img alt="Level 1 on App Evolution With Swift" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/588/level-1-on-app-evolution-with-swift-5abead6e17afa8a733e029e8bcfceef6.png" data-large-badge-id="badge-587" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/588/level-1-on-app-evolution-with-swift-5abead6e17afa8a733e029e8bcfceef6.png" />
+</a></div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div class='card card--b mbm'>
+<div class='bucket bucket--flag'>
+<div class='bucket-media'>
+<div class='badge'>
+<img alt="Digging Into Django" class="badge-img" data-original-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/662/digging-into-django-b6a5a099265fee0480c8d910a25c0e4d.png" id="badge-662" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/662/digging-into-django-b6a5a099265fee0480c8d910a25c0e4d.png" />
+</div>
+</div>
+<div class='bucket-content'>
+<ol class='list list--object'>
+<li class='badge--inactive list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/656"><img alt="Level 1 on Digging Into Django" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/656/level-1-on-digging-into-django-82fa57c9a5992eb8e4a7599deffddf6e.png" data-large-badge-id="badge-662" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/656/level-1-on-digging-into-django-82fa57c9a5992eb8e4a7599deffddf6e.png" />
+</a></div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div class='card card--b mbm'>
+<div class='bucket bucket--flag'>
+<div class='bucket-media'>
+<div class='badge'>
+<img alt="Try Django" class="badge-img" data-original-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/649/try-django-c611a15fa04fd0aa09a3ebed3ad90786.png" id="badge-649" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/649/try-django-c611a15fa04fd0aa09a3ebed3ad90786.png" />
+</div>
+</div>
+<div class='bucket-content'>
+<ol class='list list--object'>
+<li class='badge--inactive list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/646"><img alt="Level 1 on Try Django" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/646/level-1-on-try-django-ff9401dff696f99e1c99041e584ecd09.png" data-large-badge-id="badge-649" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/646/level-1-on-try-django-ff9401dff696f99e1c99041e584ecd09.png" />
+</a></div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div class='card card--b mbm'>
+<div class='bucket bucket--flag'>
+<div class='bucket-media'>
+<div class='badge mbm mbf--m'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/707"><img alt="Try C#" class="badge-img" data-original-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/707/try-c-2ceeb2f5ced91b67d787ed15f4453ce0.png" id="badge-707" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/707/try-c-2ceeb2f5ced91b67d787ed15f4453ce0.png" />
+</a></div>
+</div>
+<div class='bucket-content'>
+<ol class='list list--object'>
+<li class='list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/704"><img alt="Level 1 Complete" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/704/level-1-complete-764fb09f637f16bcc3167f04f6cef87a.png" data-large-badge-id="badge-707" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/704/level-1-complete-764fb09f637f16bcc3167f04f6cef87a.png" />
+</a></div>
+</li>
+<li class='list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/705"><img alt="Level 2 Complete" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/705/level-2-complete-187d64aab50adb46e4c7c74f95830fde.png" data-large-badge-id="badge-707" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/705/level-2-complete-187d64aab50adb46e4c7c74f95830fde.png" />
+</a></div>
+</li>
+<li class='list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/706"><img alt="Level 3 Complete" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/706/level-3-complete-db69888ba67999cf2b0adb1c69753800.png" data-large-badge-id="badge-707" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/706/level-3-complete-db69888ba67999cf2b0adb1c69753800.png" />
+</a></div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div class='card card--b mbm'>
+<div class='bucket bucket--flag'>
+<div class='bucket-media'>
+<div class='badge'>
+<img alt="Forging Ahead With ASP.NET Core" class="badge-img" data-original-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/655/forging-ahead-with-asp-net-core-499a2f9dfe23c46721346364b634181d.png" id="badge-655" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/655/forging-ahead-with-asp-net-core-499a2f9dfe23c46721346364b634181d.png" />
+</div>
+</div>
+<div class='bucket-content'>
+<ol class='list list--object'>
+<li class='badge--inactive list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/650"><img alt="Level 1 on Forging Ahead With ASP.NET Core" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/650/level-1-on-forging-ahead-with-asp-net-core-4e68c5927e85f6e0591e21adcc69d29a.png" data-large-badge-id="badge-655" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/650/level-1-on-forging-ahead-with-asp-net-core-4e68c5927e85f6e0591e21adcc69d29a.png" />
+</a></div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div class='card card--b mbm'>
+<div class='bucket bucket--flag'>
+<div class='bucket-media'>
+<div class='badge mbm mbf--m'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/639"><img alt="Try ASP.NET Core" class="badge-img" data-original-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/639/try-asp-net-core-245663587272a86d251a9f42486caac7.png" id="badge-639" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/639/try-asp-net-core-245663587272a86d251a9f42486caac7.png" />
+</a></div>
+</div>
+<div class='bucket-content'>
+<ol class='list list--object'>
+<li class='list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/636"><img alt="Level 1 on Try ASP.NET Core" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/636/level-1-on-try-asp-net-core-17541425f1f95589111a42cf64fec06f.png" data-large-badge-id="badge-639" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/636/level-1-on-try-asp-net-core-17541425f1f95589111a42cf64fec06f.png" />
+</a></div>
+</li>
+<li class='list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/637"><img alt="Level 2 on Try ASP.NET Core" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/637/level-2-on-try-asp-net-core-7e1927139543222a6237e74ab11713c2.png" data-large-badge-id="badge-639" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/637/level-2-on-try-asp-net-core-7e1927139543222a6237e74ab11713c2.png" />
+</a></div>
+</li>
+<li class='list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/638"><img alt="Level 3 on Try ASP.NET Core" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/638/level-3-on-try-asp-net-core-32ff59d560fe12f6a6bf31cb5d7dac12.png" data-large-badge-id="badge-639" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/638/level-3-on-try-asp-net-core-32ff59d560fe12f6a6bf31cb5d7dac12.png" />
+</a></div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div class='card card--b mbm'>
+<div class='bucket bucket--flag'>
+<div class='bucket-media'>
+<div class='badge mbm mbf--m'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/717"><img alt="Try Laravel" class="badge-img" data-original-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/717/try-laravel-d287644f227e2a58e283123e2448a4d8.png" id="badge-717" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/717/try-laravel-d287644f227e2a58e283123e2448a4d8.png" />
+</a></div>
+</div>
+<div class='bucket-content'>
+<ol class='list list--object'>
+<li class='list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/714"><img alt="Level 1 Complete" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/714/level-1-complete-cade39feca399a168685fd4d5e06ad56.png" data-large-badge-id="badge-717" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/714/level-1-complete-cade39feca399a168685fd4d5e06ad56.png" />
+</a></div>
+</li>
+<li class='list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/715"><img alt="Level 2 Complete" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/715/level-2-complete-f0f1a5c2962b624b36deb1f470a684c4.png" data-large-badge-id="badge-717" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/715/level-2-complete-f0f1a5c2962b624b36deb1f470a684c4.png" />
+</a></div>
+</li>
+<li class='list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/716"><img alt="Level 3 Complete" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/716/level-3-complete-2799af46d5c1e9acdf6bf8420ec7fcb2.png" data-large-badge-id="badge-717" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/716/level-3-complete-2799af46d5c1e9acdf6bf8420ec7fcb2.png" />
+</a></div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div class='card card--b mbm'>
+<div class='bucket bucket--flag'>
+<div class='bucket-media'>
+<div class='badge'>
+<img alt="Super Sweet Android Time" class="badge-img" data-original-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/763/super-sweet-android-time-2a721f3b668cd6887107e572e6490e29.png" id="badge-763" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/763/super-sweet-android-time-2a721f3b668cd6887107e572e6490e29.png" />
+</div>
+</div>
+<div class='bucket-content'>
+<ol class='list list--object'>
+<li class='badge--inactive list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/758"><img alt="Level 1 on Super Sweet Android Time" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/758/level-1-on-super-sweet-android-time-192a1c8ce8ae55ca3eaaaaaf1035c9c0.png" data-large-badge-id="badge-763" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/758/level-1-on-super-sweet-android-time-192a1c8ce8ae55ca3eaaaaaf1035c9c0.png" />
+</a></div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div class='card card--b mbm'>
+<div class='bucket bucket--flag'>
+<div class='bucket-media'>
+<div class='badge'>
+<img alt="Try Android" class="badge-img" data-original-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/728/try-android-fbf1e680f2b2ebf7ee700c13d2ca7c3a.png" id="badge-728" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/728/try-android-fbf1e680f2b2ebf7ee700c13d2ca7c3a.png" />
+</div>
+</div>
+<div class='bucket-content'>
+<ol class='list list--object'>
+<li class='badge--inactive list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/724"><img alt="Level 1 Complete" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/724/level-1-complete-1d9f47dc66870ee4d3fa784f832ee2cb.png" data-large-badge-id="badge-728" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/724/level-1-complete-1d9f47dc66870ee4d3fa784f832ee2cb.png" />
+</a></div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div class='card card--b mbm'>
+<div class='bucket bucket--flag'>
+<div class='bucket-media'>
+<div class='badge mbm mbf--m'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/689"><img alt="Try Elixir" class="badge-img" data-original-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/689/try-elixir-8a6491572dfd0df82fe609f086b4b2ea.png" id="badge-689" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/689/try-elixir-8a6491572dfd0df82fe609f086b4b2ea.png" />
+</a></div>
+</div>
+<div class='bucket-content'>
+<ol class='list list--object'>
+<li class='list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/690"><img alt="Level 1 on Try Elixir" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/690/level-1-on-try-elixir-71471651e7c51285cf8dd08b035ac126.png" data-large-badge-id="badge-689" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/690/level-1-on-try-elixir-71471651e7c51285cf8dd08b035ac126.png" />
+</a></div>
+</li>
+<li class='list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/691"><img alt="Level 2 on Try Elixir" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/691/level-2-on-try-elixir-b56fc3cd5ca725628f962af6666a4400.png" data-large-badge-id="badge-689" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/691/level-2-on-try-elixir-b56fc3cd5ca725628f962af6666a4400.png" />
+</a></div>
+</li>
+<li class='list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/692"><img alt="Level 3 on Try Elixir" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/692/level-3-on-try-elixir-f1a3741304e65504d24c018fba327868.png" data-large-badge-id="badge-689" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/692/level-3-on-try-elixir-f1a3741304e65504d24c018fba327868.png" />
+</a></div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div class='card card--b mbm'>
+<div class='bucket bucket--flag'>
+<div class='bucket-media'>
+<div class='badge'>
+<img alt="Completed Rails 4 Patterns" class="badge-img" data-original-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/288/completed-rails-4-patterns-9cd5a978396a278b0dd220efb1867d37.png" id="badge-288" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/288/completed-rails-4-patterns-9cd5a978396a278b0dd220efb1867d37.png" />
+</div>
+</div>
+<div class='bucket-content'>
+<ol class='list list--object'>
+<li class='badge--inactive list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/289"><img alt="Level 1 on Rails 4 Patterns" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/289/level-1-on-rails-4-patterns-090a4bd2f3f094198ee72647d84cc99a.png" data-large-badge-id="badge-288" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/289/level-1-on-rails-4-patterns-090a4bd2f3f094198ee72647d84cc99a.png" />
+</a></div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div class='card card--b mbm'>
+<div class='bucket bucket--flag'>
+<div class='bucket-media'>
+<div class='badge'>
+<img alt="Completed Surviving APIs with Rails" class="badge-img" data-original-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/378/completed-surviving-apis-with-rails-482f87efd9827f52ecaa027f733592cb.png" id="badge-378" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/378/completed-surviving-apis-with-rails-482f87efd9827f52ecaa027f733592cb.png" />
+</div>
+</div>
+<div class='bucket-content'>
+<ol class='list list--object'>
+<li class='badge--inactive list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/379"><img alt="Level 1 on Surviving APIs with Rails" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/379/level-1-on-surviving-apis-with-rails-927d1d6ff2b7f315053c16d074afcfd3.png" data-large-badge-id="badge-378" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/379/level-1-on-surviving-apis-with-rails-927d1d6ff2b7f315053c16d074afcfd3.png" />
+</a></div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div class='card card--b mbm'>
+<div class='bucket bucket--flag'>
+<div class='bucket-media'>
+<div class='badge'>
+<img alt="Completed Rails 4: Zombie Outlaws" class="badge-img" data-original-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/205/completed-rails-4-zombie-outlaws-7fd9524d963a73ab67b1d74338f0badb.png" id="badge-205" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/205/completed-rails-4-zombie-outlaws-7fd9524d963a73ab67b1d74338f0badb.png" />
+</div>
+</div>
+<div class='bucket-content'>
+<ol class='list list--object'>
+<li class='badge--inactive list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/206"><img alt="Level 1 on Rails 4: Zombie Outlaws" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/206/level-1-on-rails-4-zombie-outlaws-9c9f5b842d2807ead0bbe80eb3f8f666.png" data-large-badge-id="badge-205" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/206/level-1-on-rails-4-zombie-outlaws-9c9f5b842d2807ead0bbe80eb3f8f666.png" />
+</a></div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div class='card card--b mbm'>
+<div class='bucket bucket--flag'>
+<div class='bucket-media'>
+<div class='badge'>
+<img alt="Completed Ruby Bits Part 2" class="badge-img" data-original-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/155/completed-ruby-bits-part-2-8a1e5ab0ed374cb8f8c2957e07b65eaa.png" id="badge-155" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/155/completed-ruby-bits-part-2-8a1e5ab0ed374cb8f8c2957e07b65eaa.png" />
+</div>
+</div>
+<div class='bucket-content'>
+<ol class='list list--object'>
+<li class='badge--inactive list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/156"><img alt="Level 1 on Ruby Bits Part 2" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/156/level-1-on-ruby-bits-part-2-dbbd14b6ac8c5fabcde41e7d486498f3.png" data-large-badge-id="badge-155" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/156/level-1-on-ruby-bits-part-2-dbbd14b6ac8c5fabcde41e7d486498f3.png" />
+</a></div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div class='card card--b mbm'>
+<div class='bucket bucket--flag'>
+<div class='bucket-media'>
+<div class='badge'>
+<img alt="Completed Ruby Bits" class="badge-img" data-original-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/139/completed-ruby-bits-c1546701600d257c159fcd24de279ea0.png" id="badge-139" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/139/completed-ruby-bits-c1546701600d257c159fcd24de279ea0.png" />
+</div>
+</div>
+<div class='bucket-content'>
+<ol class='list list--object'>
+<li class='badge--inactive list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/140"><img alt="Level 1 on Ruby Bits" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/140/level-1-on-ruby-bits-fd61bce30b5dc59e032d0e90900b34a4.png" data-large-badge-id="badge-139" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/140/level-1-on-ruby-bits-fd61bce30b5dc59e032d0e90900b34a4.png" />
+</a></div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div class='card card--b mbm'>
+<div class='bucket bucket--flag'>
+<div class='bucket-media'>
+<div class='badge mbm mbf--m'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/133"><img alt="Completed Rails for Zombies Redux" class="badge-img" data-original-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/133/completed-rails-for-zombies-redux-0f73c361c3d5070ca2fa7951e65cbf39.png" id="badge-133" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/133/completed-rails-for-zombies-redux-0f73c361c3d5070ca2fa7951e65cbf39.png" />
+</a></div>
+</div>
+<div class='bucket-content'>
+<ol class='list list--object'>
+<li class='list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/134"><img alt="Level 1 on Rails for Zombies Redux" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/134/level-1-on-rails-for-zombies-redux-2ba020b1379910903e2f8724a8199404.png" data-large-badge-id="badge-133" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/134/level-1-on-rails-for-zombies-redux-2ba020b1379910903e2f8724a8199404.png" />
+</a></div>
+</li>
+<li class='list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/135"><img alt="Level 2 on Rails for Zombies Redux" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/135/level-2-on-rails-for-zombies-redux-84161b6c606aa55fc878380c3680b572.png" data-large-badge-id="badge-133" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/135/level-2-on-rails-for-zombies-redux-84161b6c606aa55fc878380c3680b572.png" />
+</a></div>
+</li>
+<li class='list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/136"><img alt="Level 3 on Rails for Zombies Redux" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/136/level-3-on-rails-for-zombies-redux-f3ccde89280aa8d6a325e97390fabcd0.png" data-large-badge-id="badge-133" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/136/level-3-on-rails-for-zombies-redux-f3ccde89280aa8d6a325e97390fabcd0.png" />
+</a></div>
+</li>
+<li class='list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/137"><img alt="Level 4 on Rails for Zombies Redux" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/137/level-4-on-rails-for-zombies-redux-60c9d341a1b0853a359ce6d19275df03.png" data-large-badge-id="badge-133" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/137/level-4-on-rails-for-zombies-redux-60c9d341a1b0853a359ce6d19275df03.png" />
+</a></div>
+</li>
+<li class='list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/451"><img alt="Level 5 on Rails for Zombies Redux" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/451/level-5-on-rails-for-zombies-redux-8540dc699ec3063b5c20387ffbed1389.png" data-large-badge-id="badge-133" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/451/level-5-on-rails-for-zombies-redux-8540dc699ec3063b5c20387ffbed1389.png" />
+</a></div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div class='card card--b mbm'>
+<div class='bucket bucket--flag'>
+<div class='bucket-media'>
+<div class='badge mbm mbf--m'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/24"><img alt="Completed Try Ruby" class="badge-img" data-original-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/24/completed-try-ruby-220eaa3eedcaf47135a02158592095cb.png" id="badge-24" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/24/completed-try-ruby-220eaa3eedcaf47135a02158592095cb.png" />
+</a></div>
+</div>
+<div class='bucket-content'>
+<ol class='list list--object'>
+<li class='list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/463"><img alt="Level 1 on Try Ruby" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/463/level-1-on-try-ruby-8f8cc28e53daef6fe36a6b8b94bbef47.png" data-large-badge-id="badge-24" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/463/level-1-on-try-ruby-8f8cc28e53daef6fe36a6b8b94bbef47.png" />
+</a></div>
+</li>
+<li class='list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/464"><img alt="Level 2 on Try Ruby" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/464/level-2-on-try-ruby-bf5966ddc34f9845341e38c5c3fe3986.png" data-large-badge-id="badge-24" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/464/level-2-on-try-ruby-bf5966ddc34f9845341e38c5c3fe3986.png" />
+</a></div>
+</li>
+<li class='list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/465"><img alt="Level 3 on Try Ruby" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/465/level-3-on-try-ruby-8ca933ada1d70b7475054e647126d5ae.png" data-large-badge-id="badge-24" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/465/level-3-on-try-ruby-8ca933ada1d70b7475054e647126d5ae.png" />
+</a></div>
+</li>
+<li class='list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/466"><img alt="Level 4 on Try Ruby" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/466/level-4-on-try-ruby-5995aa3d90b4dfb9faae1eb1c4ba8868.png" data-large-badge-id="badge-24" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/466/level-4-on-try-ruby-5995aa3d90b4dfb9faae1eb1c4ba8868.png" />
+</a></div>
+</li>
+<li class='list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/467"><img alt="Level 5 on Try Ruby" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/467/level-5-on-try-ruby-333c6e45375f4851ff31be67e27522c8.png" data-large-badge-id="badge-24" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/467/level-5-on-try-ruby-333c6e45375f4851ff31be67e27522c8.png" />
+</a></div>
+</li>
+<li class='list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/468"><img alt="Level 6 on Try Ruby" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/468/level-6-on-try-ruby-27d94753bf1d50003f5d9ee6fa3aff7a.png" data-large-badge-id="badge-24" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/468/level-6-on-try-ruby-27d94753bf1d50003f5d9ee6fa3aff7a.png" />
+</a></div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div class='card card--b mbm'>
+<div class='bucket bucket--flag'>
+<div class='bucket-media'>
+<div class='badge'>
+<img alt="Completed CoffeeScript" class="badge-img" data-original-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/34/completed-coffeescript-a0e4e657cfa6157c594a8a2304c49d4b.png" id="badge-34" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/34/completed-coffeescript-a0e4e657cfa6157c594a8a2304c49d4b.png" />
+</div>
+</div>
+<div class='bucket-content'>
+<ol class='list list--object'>
+<li class='badge--inactive list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/35"><img alt="Level 1 on CoffeeScript" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/35/level-1-on-coffeescript-f77bf03f7bfbe6c7c80e824edc4694b8.png" data-large-badge-id="badge-34" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/35/level-1-on-coffeescript-f77bf03f7bfbe6c7c80e824edc4694b8.png" />
+</a></div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div class='card card--b mbm'>
+<div class='bucket bucket--flag'>
+<div class='bucket-media'>
+<div class='badge'>
+<img alt="Completed Building Blocks of Express.js" class="badge-img" data-original-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/475/completed-building-blocks-of-express-js-51227acf5773414563c2dcd82c14ca10.png" id="badge-475" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/475/completed-building-blocks-of-express-js-51227acf5773414563c2dcd82c14ca10.png" />
+</div>
+</div>
+<div class='bucket-content'>
+<ol class='list list--object'>
+<li class='badge--inactive list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/470"><img alt="Level 1 on Building Blocks of Express.js" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/470/level-1-on-building-blocks-of-express-js-e9373438816eeb01a39ccea4ce56c36a.png" data-large-badge-id="badge-475" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/470/level-1-on-building-blocks-of-express-js-e9373438816eeb01a39ccea4ce56c36a.png" />
+</a></div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div class='card card--b mbm'>
+<div class='bucket bucket--flag'>
+<div class='bucket-media'>
+<div class='badge'>
+<img alt="Completed Real-time Web with Node.js" class="badge-img" data-original-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/107/completed-real-time-web-with-node-js-c8408b2b17ff6492d3f4d241c0db322d.png" id="badge-107" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/107/completed-real-time-web-with-node-js-c8408b2b17ff6492d3f4d241c0db322d.png" />
+</div>
+</div>
+<div class='bucket-content'>
+<ol class='list list--object'>
+<li class='badge--inactive list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/108"><img alt="Level 1 on Real-time Web with Node.js" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/108/level-1-on-real-time-web-with-node-js-a10449b7ff71615313f1ae8895a063c9.png" data-large-badge-id="badge-107" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/108/level-1-on-real-time-web-with-node-js-a10449b7ff71615313f1ae8895a063c9.png" />
+</a></div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div class='card card--b mbm'>
+<div class='bucket bucket--flag'>
+<div class='bucket-media'>
+<div class='badge'>
+<img alt="Completed Anatomy of Backbone.JS Part 2" class="badge-img" data-original-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/183/completed-anatomy-of-backbone-js-part-2-8f1351f78fe3fde90e7d9c19f07cbfac.png" id="badge-183" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/183/completed-anatomy-of-backbone-js-part-2-8f1351f78fe3fde90e7d9c19f07cbfac.png" />
+</div>
+</div>
+<div class='bucket-content'>
+<ol class='list list--object'>
+<li class='badge--inactive list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/184"><img alt="Level 1 on Anatomy of Backbone.JS Part 2" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/184/level-1-on-anatomy-of-backbone-js-part-2-8f767bef5eff75d1bd09aa5354d8108f.png" data-large-badge-id="badge-183" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/184/level-1-on-anatomy-of-backbone-js-part-2-8f767bef5eff75d1bd09aa5354d8108f.png" />
+</a></div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div class='card card--b mbm'>
+<div class='bucket bucket--flag'>
+<div class='bucket-media'>
+<div class='badge'>
+<img alt="Completed Anatomy of Backbone.js" class="badge-img" data-original-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/94/completed-anatomy-of-backbone-js-2ed69787ec511c00f8a15295652580be.png" id="badge-94" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/94/completed-anatomy-of-backbone-js-2ed69787ec511c00f8a15295652580be.png" />
+</div>
+</div>
+<div class='bucket-content'>
+<ol class='list list--object'>
+<li class='badge--inactive list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/95"><img alt="Level 1 on Anatomy of Backbone.js" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/95/level-1-on-anatomy-of-backbone-js-7ead7e2bbe1129c239cb78f69622c4ca.png" data-large-badge-id="badge-94" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/95/level-1-on-anatomy-of-backbone-js-7ead7e2bbe1129c239cb78f69622c4ca.png" />
+</a></div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div class='card card--b mbm'>
+<div class='bucket bucket--flag'>
+<div class='bucket-media'>
+<div class='badge'>
+<img alt="Course Complete" class="badge-img" data-original-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/486/course-complete-ebe206644f2913a5c6fda73d4e365d39.png" id="badge-486" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/486/course-complete-ebe206644f2913a5c6fda73d4e365d39.png" />
+</div>
+</div>
+<div class='bucket-content'>
+<ol class='list list--object'>
+<li class='badge--inactive list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/482"><img alt="Level 1 Complete" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/482/level-1-complete-26668ce2717bc4d48153c1e697aa4870.png" data-large-badge-id="badge-486" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/482/level-1-complete-26668ce2717bc4d48153c1e697aa4870.png" />
+</a></div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div class='card card--b mbm'>
+<div class='bucket bucket--flag'>
+<div class='bucket-media'>
+<div class='badge mbm mbf--m'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/392"><img alt="Completed Shaping up with AngularJS" class="badge-img" data-original-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/392/completed-shaping-up-with-angularjs-54e59cc56157943f6691081338b94328.png" id="badge-392" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/392/completed-shaping-up-with-angularjs-54e59cc56157943f6691081338b94328.png" />
+</a></div>
+</div>
+<div class='bucket-content'>
+<ol class='list list--object'>
+<li class='list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/393"><img alt="Level 1 on Shaping up with AngularJS" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/393/level-1-on-shaping-up-with-angularjs-2f5667cc62303ce2416d902fcf6c5ffc.png" data-large-badge-id="badge-392" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/393/level-1-on-shaping-up-with-angularjs-2f5667cc62303ce2416d902fcf6c5ffc.png" />
+</a></div>
+</li>
+<li class='list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/394"><img alt="Level 2 on Shaping up with AngularJS" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/394/level-2-on-shaping-up-with-angularjs-35372b710b98fee826132a53226d08ef.png" data-large-badge-id="badge-392" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/394/level-2-on-shaping-up-with-angularjs-35372b710b98fee826132a53226d08ef.png" />
+</a></div>
+</li>
+<li class='list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/395"><img alt="Level 3 on Shaping up with AngularJS" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/395/level-3-on-shaping-up-with-angularjs-80d76a75bfe1e5fa60359ce1cea02ceb.png" data-large-badge-id="badge-392" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/395/level-3-on-shaping-up-with-angularjs-80d76a75bfe1e5fa60359ce1cea02ceb.png" />
+</a></div>
+</li>
+<li class='list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/396"><img alt="Level 4 on Shaping up with AngularJS" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/396/level-4-on-shaping-up-with-angularjs-77764ec8afba15dfd9908531db51d784.png" data-large-badge-id="badge-392" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/396/level-4-on-shaping-up-with-angularjs-77764ec8afba15dfd9908531db51d784.png" />
+</a></div>
+</li>
+<li class='list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/397"><img alt="Level 5 on Shaping up with AngularJS" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/397/level-5-on-shaping-up-with-angularjs-b17ca2086d841080f3456bb1284ecb60.png" data-large-badge-id="badge-392" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/397/level-5-on-shaping-up-with-angularjs-b17ca2086d841080f3456bb1284ecb60.png" />
+</a></div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div class='card card--b mbm'>
+<div class='bucket bucket--flag'>
+<div class='bucket-media'>
+<div class='badge'>
+<img alt="Try Ember" class="badge-img" data-original-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/607/try-ember-ec9332e0c18814d4afe0d6fd51fc14fe.png" id="badge-607" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/607/try-ember-ec9332e0c18814d4afe0d6fd51fc14fe.png" />
+</div>
+</div>
+<div class='bucket-content'>
+<ol class='list list--object'>
+<li class='badge--inactive list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/608"><img alt="Level 1 on Try Ember" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/608/level-1-on-try-ember-788647284c1c5bfa64d9209b700d3df1.png" data-large-badge-id="badge-607" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/608/level-1-on-try-ember-788647284c1c5bfa64d9209b700d3df1.png" />
+</a></div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div class='card card--b mbm'>
+<div class='bucket bucket--flag'>
+<div class='bucket-media'>
+<div class='badge'>
+<img alt="Course Complete" class="badge-img" data-original-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/624/course-complete-9735ab04d353c7aa4d5677ebefa7823c.png" id="badge-624" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/624/course-complete-9735ab04d353c7aa4d5677ebefa7823c.png" />
+</div>
+</div>
+<div class='bucket-content'>
+<ol class='list list--object'>
+<li class='badge--inactive list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/625"><img alt="Level 1 on Powering Up With React" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/625/level-1-on-powering-up-with-react-14b125522aef48b39898b2227e4afd33.png" data-large-badge-id="badge-624" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/625/level-1-on-powering-up-with-react-14b125522aef48b39898b2227e4afd33.png" />
+</a></div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div class='card card--b mbm'>
+<div class='bucket bucket--flag'>
+<div class='bucket-media'>
+<div class='badge'>
+<img alt="Accelerating Through Angular" class="badge-img" data-original-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/645/accelerating-through-angular-2f411876a6a333ef75a039d5e4eaeb27.png" id="badge-645" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/645/accelerating-through-angular-2f411876a6a333ef75a039d5e4eaeb27.png" />
+</div>
+</div>
+<div class='bucket-content'>
+<ol class='list list--object'>
+<li class='badge--inactive list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/640"><img alt="Level 1 on Accelerating Through Angular" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/640/level-1-on-accelerating-through-angular-f87cd49c2f19e94a2d9bc28ded170132.png" data-large-badge-id="badge-645" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/640/level-1-on-accelerating-through-angular-f87cd49c2f19e94a2d9bc28ded170132.png" />
+</a></div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div class='card card--b mbm'>
+<div class='bucket bucket--flag'>
+<div class='bucket-media'>
+<div class='badge'>
+<img alt="Completed jQuery: The Return Flight" class="badge-img" data-original-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/266/completed-jquery-the-return-flight-9ad2cf12f15881f2f7e6621e355f15b3.png" id="badge-266" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/266/completed-jquery-the-return-flight-9ad2cf12f15881f2f7e6621e355f15b3.png" />
+</div>
+</div>
+<div class='bucket-content'>
+<ol class='list list--object'>
+<li class='badge--inactive list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/267"><img alt="Level 1 on jQuery: The Return Flight" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/267/level-1-on-jquery-the-return-flight-53a2e4c530f99e6216252c3839ac1eb9.png" data-large-badge-id="badge-266" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/267/level-1-on-jquery-the-return-flight-53a2e4c530f99e6216252c3839ac1eb9.png" />
+</a></div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div class='card card--b mbm'>
+<div class='bucket bucket--flag'>
+<div class='bucket-media'>
+<div class='badge mbm mbf--m'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/191"><img alt="Completed Try jQuery" class="badge-img" data-original-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/191/completed-try-jquery-872711eae2fc5024011c64863ae69323.png" id="badge-191" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/191/completed-try-jquery-872711eae2fc5024011c64863ae69323.png" />
+</a></div>
+</div>
+<div class='bucket-content'>
+<ol class='list list--object'>
+<li class='list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/192"><img alt="Level 1 on Try jQuery" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/192/level-1-on-try-jquery-195852b5089f07d0a4ec66634dbc3285.png" data-large-badge-id="badge-191" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/192/level-1-on-try-jquery-195852b5089f07d0a4ec66634dbc3285.png" />
+</a></div>
+</li>
+<li class='list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/193"><img alt="Level 2 on Try jQuery" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/193/level-2-on-try-jquery-804e03c59fd757dbe7c3964d238e37a2.png" data-large-badge-id="badge-191" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/193/level-2-on-try-jquery-804e03c59fd757dbe7c3964d238e37a2.png" />
+</a></div>
+</li>
+<li class='list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/194"><img alt="Level 3 on Try jQuery" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/194/level-3-on-try-jquery-0fd4605995b2b2aed756dcd55ba3c3c8.png" data-large-badge-id="badge-191" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/194/level-3-on-try-jquery-0fd4605995b2b2aed756dcd55ba3c3c8.png" />
+</a></div>
+</li>
+<li class='list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/195"><img alt="Level 4 on Try jQuery" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/195/level-4-on-try-jquery-2e887987593d69f5d7a9c3888abbf797.png" data-large-badge-id="badge-191" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/195/level-4-on-try-jquery-2e887987593d69f5d7a9c3888abbf797.png" />
+</a></div>
+</li>
+<li class='list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/196"><img alt="Level 5 on Try jQuery" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/196/level-5-on-try-jquery-d932a0a14a14f5b274c820948ad048c6.png" data-large-badge-id="badge-191" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/196/level-5-on-try-jquery-d932a0a14a14f5b274c820948ad048c6.png" />
+</a></div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div class='card card--b mbm'>
+<div class='bucket bucket--flag'>
+<div class='bucket-media'>
+<div class='badge'>
+<img alt="ES2015: The Shape of JavaScript to Come" class="badge-img" data-original-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/575/es2015-the-shape-of-javascript-to-come-4fc892886efc17afcade1d54da324a38.png" id="badge-575" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/575/es2015-the-shape-of-javascript-to-come-4fc892886efc17afcade1d54da324a38.png" />
+</div>
+</div>
+<div class='bucket-content'>
+<ol class='list list--object'>
+<li class='badge--inactive list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/576"><img alt="Level 1 on ES2015: The Shape of JavaScript to Come" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/576/level-1-on-es2015-the-shape-of-javascript-to-come-9fe76219e758da8911fd550c1a1afcba.png" data-large-badge-id="badge-575" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/576/level-1-on-es2015-the-shape-of-javascript-to-come-9fe76219e758da8911fd550c1a1afcba.png" />
+</a></div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div class='card card--b mbm'>
+<div class='bucket bucket--flag'>
+<div class='bucket-media'>
+<div class='badge'>
+<img alt="Completed JavaScript Road Trip Part 3" class="badge-img" data-original-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/321/completed-javascript-road-trip-part-3-6c96fe52f9c68b790937d3db2110325a.png" id="badge-321" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/321/completed-javascript-road-trip-part-3-6c96fe52f9c68b790937d3db2110325a.png" />
+</div>
+</div>
+<div class='bucket-content'>
+<ol class='list list--object'>
+<li class='badge--inactive list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/322"><img alt="Level 1 on JavaScript Road Trip Part 3" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/322/level-1-on-javascript-road-trip-part-3-9ad1dad72f2be56c98fe319ea809be32.png" data-large-badge-id="badge-321" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/322/level-1-on-javascript-road-trip-part-3-9ad1dad72f2be56c98fe319ea809be32.png" />
+</a></div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div class='card card--b mbm'>
+<div class='bucket bucket--flag'>
+<div class='bucket-media'>
+<div class='badge'>
+<img alt="Completed JavaScript Road Trip Part 2" class="badge-img" data-original-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/300/completed-javascript-road-trip-part-2-d4fd45ae7ecb6601fe4a0c8d506ca306.png" id="badge-300" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/300/completed-javascript-road-trip-part-2-d4fd45ae7ecb6601fe4a0c8d506ca306.png" />
+</div>
+</div>
+<div class='bucket-content'>
+<ol class='list list--object'>
+<li class='badge--inactive list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/301"><img alt="Level 1 on JavaScript Road Trip Part 2" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/301/level-1-on-javascript-road-trip-part-2-baf68d7f42f8b6b5f185a356de5690b2.png" data-large-badge-id="badge-300" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/301/level-1-on-javascript-road-trip-part-2-baf68d7f42f8b6b5f185a356de5690b2.png" />
+</a></div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div class='card card--b mbm'>
+<div class='bucket bucket--flag'>
+<div class='bucket-media'>
+<div class='badge'>
+<img alt="Completed JavaScript Road Trip Part 1" class="badge-img" data-original-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/296/completed-javascript-road-trip-part-1-b9f5af5196fb596271f7f97b6b477d24.png" id="badge-296" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/296/completed-javascript-road-trip-part-1-b9f5af5196fb596271f7f97b6b477d24.png" />
+</div>
+</div>
+<div class='bucket-content'>
+<ol class='list list--object'>
+<li class='badge--inactive list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/297"><img alt="Level 1 on JavaScript Road Trip Part 1" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/297/level-1-on-javascript-road-trip-part-1-ff645bd94243922a90b775da5ee2647c.png" data-large-badge-id="badge-296" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/297/level-1-on-javascript-road-trip-part-1-ff645bd94243922a90b775da5ee2647c.png" />
+</a></div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div class='card card--b mbm'>
+<div class='bucket bucket--flag'>
+<div class='bucket-media'>
+<div class='badge'>
+<img alt="Completed The Elements of Web Design" class="badge-img" data-original-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/635/completed-the-elements-of-web-design-c6915faeadf0e4d230f10419b05eb3d7.png" id="badge-635" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/635/completed-the-elements-of-web-design-c6915faeadf0e4d230f10419b05eb3d7.png" />
+</div>
+</div>
+<div class='bucket-content'>
+<ol class='list list--object'>
+<li class='badge--inactive list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/631"><img alt="Level 1 on The Elements of Web Design" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/631/level-1-on-the-elements-of-web-design-c0e859c6119520c52189065e6571b38a.png" data-large-badge-id="badge-635" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/631/level-1-on-the-elements-of-web-design-c0e859c6119520c52189065e6571b38a.png" />
+</a></div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div class='card card--b mbm'>
+<div class='bucket bucket--flag'>
+<div class='bucket-media'>
+<div class='badge'>
+<img alt="Course Complete" class="badge-img" data-original-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/481/course-complete-0920f3daf574016a49db7991228d99bf.png" id="badge-481" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/481/course-complete-0920f3daf574016a49db7991228d99bf.png" />
+</div>
+</div>
+<div class='bucket-content'>
+<ol class='list list--object'>
+<li class='badge--inactive list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/476"><img alt="Level 1 Complete" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/476/level-1-complete-de745560878ebb460fba573e79046c16.png" data-large-badge-id="badge-481" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/476/level-1-complete-de745560878ebb460fba573e79046c16.png" />
+</a></div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div class='card card--b mbm'>
+<div class='bucket bucket--flag'>
+<div class='bucket-media'>
+<div class='badge'>
+<img alt="Completed Assembling Sass" class="badge-img" data-original-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/146/completed-assembling-sass-18b0ff2185f670f8cc1de4a8034b53b9.png" id="badge-146" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/146/completed-assembling-sass-18b0ff2185f670f8cc1de4a8034b53b9.png" />
+</div>
+</div>
+<div class='bucket-content'>
+<ol class='list list--object'>
+<li class='badge--inactive list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/147"><img alt="Level 1 on Assembling Sass" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/147/level-1-on-assembling-sass-02ebd3581dddac8a59c6a6d922c35a7f.png" data-large-badge-id="badge-146" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/147/level-1-on-assembling-sass-02ebd3581dddac8a59c6a6d922c35a7f.png" />
+</a></div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div class='card card--b mbm'>
+<div class='bucket bucket--flag'>
+<div class='bucket-media'>
+<div class='badge'>
+<img alt="You, Me &amp; SVG" class="badge-img" data-original-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/618/you-me-svg-bafffdf6009ac4f5fd37d68e116f70d2.png" id="badge-618" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/618/you-me-svg-bafffdf6009ac4f5fd37d68e116f70d2.png" />
+</div>
+</div>
+<div class='bucket-content'>
+<ol class='list list--object'>
+<li class='badge--inactive list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/614"><img alt="Level 1 on You, Me &amp; SVG" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/614/level-1-on-you-me-svg-02d0ccc11f2f18a933e4b76218a754c2.png" data-large-badge-id="badge-618" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/614/level-1-on-you-me-svg-02d0ccc11f2f18a933e4b76218a754c2.png" />
+</a></div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div class='card card--b mbm'>
+<div class='bucket bucket--flag'>
+<div class='bucket-media'>
+<div class='badge'>
+<img alt="Adventures in Web Animations" class="badge-img" data-original-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/525/adventures-in-web-animations-ddb801dc0f6e1c033511311fa0eddece.png" id="badge-525" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/525/adventures-in-web-animations-ddb801dc0f6e1c033511311fa0eddece.png" />
+</div>
+</div>
+<div class='bucket-content'>
+<ol class='list list--object'>
+<li class='badge--inactive list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/526"><img alt="Level 1 on Adventures in Web Animations" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/526/level-1-on-adventures-in-web-animations-3383b245a916a85fad67e1d8ba7b43d3.png" data-large-badge-id="badge-525" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/526/level-1-on-adventures-in-web-animations-3383b245a916a85fad67e1d8ba7b43d3.png" />
+</a></div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div class='card card--b mbm'>
+<div class='bucket bucket--flag'>
+<div class='bucket-media'>
+<div class='badge'>
+<img alt="Course Complete" class="badge-img" data-original-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/505/course-complete-ff3bc01bb1609ae6d0d0c4057c9822d9.png" id="badge-505" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/505/course-complete-ff3bc01bb1609ae6d0d0c4057c9822d9.png" />
+</div>
+</div>
+<div class='bucket-content'>
+<ol class='list list--object'>
+<li class='badge--inactive list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/500"><img alt="Level 1 on Unmasking HTML Emails Course" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/500/level-1-on-unmasking-html-emails-course-24336ed6c952ede75db4d84dd778d36d.png" data-large-badge-id="badge-505" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/500/level-1-on-unmasking-html-emails-course-24336ed6c952ede75db4d84dd778d36d.png" />
+</a></div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div class='card card--b mbm'>
+<div class='bucket bucket--flag'>
+<div class='bucket-media'>
+<div class='badge'>
+<img alt="Completed Journey into Mobile" class="badge-img" data-original-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/102/completed-journey-into-mobile-9c1cfe569a838cc2acd84afc47712674.png" id="badge-102" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/102/completed-journey-into-mobile-9c1cfe569a838cc2acd84afc47712674.png" />
+</div>
+</div>
+<div class='bucket-content'>
+<ol class='list list--object'>
+<li class='badge--inactive list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/103"><img alt="Level 1 on Journey into Mobile" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/103/level-1-on-journey-into-mobile-38943a0dda8082a17e2bcc254325e729.png" data-large-badge-id="badge-102" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/103/level-1-on-journey-into-mobile-38943a0dda8082a17e2bcc254325e729.png" />
+</a></div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div class='card card--b mbm'>
+<div class='bucket bucket--flag'>
+<div class='bucket-media'>
+<div class='badge'>
+<img alt="Completed CSS Cross-Country" class="badge-img" data-original-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/40/completed-css-cross-country-ec9a9aa14797031680577e7a986bef75.png" id="badge-40" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/40/completed-css-cross-country-ec9a9aa14797031680577e7a986bef75.png" />
+</div>
+</div>
+<div class='bucket-content'>
+<ol class='list list--object'>
+<li class='badge--inactive list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/41"><img alt="Level 1 on CSS Cross-Country" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/41/level-1-on-css-cross-country-96fb99da28e17edb7da62911777bf1d3.png" data-large-badge-id="badge-40" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/41/level-1-on-css-cross-country-96fb99da28e17edb7da62911777bf1d3.png" />
+</a></div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div class='card card--b mbm'>
+<div class='bucket bucket--flag'>
+<div class='bucket-media'>
+<div class='badge'>
+<img alt="Completed Front-end Formations" class="badge-img" data-original-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/315/completed-front-end-formations-165329e44a56cd6d401c0c60369d368e.png" id="badge-315" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/315/completed-front-end-formations-165329e44a56cd6d401c0c60369d368e.png" />
+</div>
+</div>
+<div class='bucket-content'>
+<ol class='list list--object'>
+<li class='badge--inactive list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/316"><img alt="Level 1 on Front-end Formations" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/316/level-1-on-front-end-formations-c27483b64148275c96bb8d0c999893d9.png" data-large-badge-id="badge-315" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/316/level-1-on-front-end-formations-c27483b64148275c96bb8d0c999893d9.png" />
+</a></div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div class='card card--b mbm'>
+<div class='bucket bucket--flag'>
+<div class='bucket-media'>
+<div class='badge'>
+<img alt="Course Complete" class="badge-img" data-original-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/448/course-complete-81fb30908f005de5c75e5376d041f05f.png" id="badge-448" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/448/course-complete-81fb30908f005de5c75e5376d041f05f.png" />
+</div>
+</div>
+<div class='bucket-content'>
+<ol class='list list--object'>
+<li class='badge--inactive list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/444"><img alt="Level 1 Complete on Front End Foundations" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/444/level-1-complete-on-front-end-foundations-a14a15c153bbe32611fca5be835923bf.png" data-large-badge-id="badge-448" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/444/level-1-complete-on-front-end-foundations-a14a15c153bbe32611fca5be835923bf.png" />
+</a></div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div class='card card--b mbm'>
+<div class='bucket bucket--flag'>
+<div class='bucket-media'>
+<div class='badge mbm mbf--m'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/490"><img alt="Try SQL" class="badge-img" data-original-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/490/try-sql-2eeaad2f3a3ad35a5fed7b63563ec9b8.png" id="badge-490" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/490/try-sql-2eeaad2f3a3ad35a5fed7b63563ec9b8.png" />
+</a></div>
+</div>
+<div class='bucket-content'>
+<ol class='list list--object'>
+<li class='list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/487"><img alt="Level 1 on Try SQL" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/487/level-1-on-try-sql-68a76aafef4bc08e8b2715d63ee1fa79.png" data-large-badge-id="badge-490" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/487/level-1-on-try-sql-68a76aafef4bc08e8b2715d63ee1fa79.png" />
+</a></div>
+</li>
+<li class='list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/488"><img alt="Level 2 on Try SQL" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/488/level-2-on-try-sql-e66f986bc557122ddc6d9a9f1dbb75d2.png" data-large-badge-id="badge-490" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/488/level-2-on-try-sql-e66f986bc557122ddc6d9a9f1dbb75d2.png" />
+</a></div>
+</li>
+<li class='list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/489"><img alt="Level 3 on Try SQL" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/489/level-3-on-try-sql-742329712308c860e3b37ab1a46bb78f.png" data-large-badge-id="badge-490" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/489/level-3-on-try-sql-742329712308c860e3b37ab1a46bb78f.png" />
+</a></div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div class='card card--b mbm'>
+<div class='bucket bucket--flag'>
+<div class='bucket-media'>
+<div class='badge mbm mbf--m'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/596"><img alt="Try Python" class="badge-img" data-original-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/596/try-python-d2bdf771d5ce179c7b198432f349d481.png" id="badge-596" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/596/try-python-d2bdf771d5ce179c7b198432f349d481.png" />
+</a></div>
+</div>
+<div class='bucket-content'>
+<ol class='list list--object'>
+<li class='list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/597"><img alt="Level 1 on Try Python" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/597/level-1-on-try-python-ca5dff118ca36dae434e3d176039cf47.png" data-large-badge-id="badge-596" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/597/level-1-on-try-python-ca5dff118ca36dae434e3d176039cf47.png" />
+</a></div>
+</li>
+<li class='list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/598"><img alt="Level 2 on Try Python" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/598/level-2-on-try-python-d1e37b2d89c3717d81e8d6895f9b4245.png" data-large-badge-id="badge-596" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/598/level-2-on-try-python-d1e37b2d89c3717d81e8d6895f9b4245.png" />
+</a></div>
+</li>
+<li class='list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/599"><img alt="Level 3 on Try Python" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/599/level-3-on-try-python-1e4eedc92750919b1a0abcbffb4e5726.png" data-large-badge-id="badge-596" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/599/level-3-on-try-python-1e4eedc92750919b1a0abcbffb4e5726.png" />
+</a></div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div class='card card--b mbm'>
+<div class='bucket bucket--flag'>
+<div class='bucket-media'>
+<div class='badge mbm mbf--m'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/700"><img alt="Try Docker" class="badge-img" data-original-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/700/try-docker-1a004d3fd48268281985771485fd8405.png" id="badge-700" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/700/try-docker-1a004d3fd48268281985771485fd8405.png" />
+</a></div>
+</div>
+<div class='bucket-content'>
+<ol class='list list--object'>
+<li class='list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/701"><img alt="Level 1 on Try Docker" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/701/level-1-on-try-docker-fbc14ed6ba43b108c283514f59a9afad.png" data-large-badge-id="badge-700" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/701/level-1-on-try-docker-fbc14ed6ba43b108c283514f59a9afad.png" />
+</a></div>
+</li>
+<li class='list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/702"><img alt="Level 2 on Try Docker" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/702/level-2-on-try-docker-f8747952a1dd3878deb48f8ed7b11cc4.png" data-large-badge-id="badge-700" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/702/level-2-on-try-docker-f8747952a1dd3878deb48f8ed7b11cc4.png" />
+</a></div>
+</li>
+<li class='list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/703"><img alt="Level 3 on Try Docker" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/703/level-3-on-try-docker-bcfafcab0cd9961b96f7a4ff6b961a50.png" data-large-badge-id="badge-700" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/703/level-3-on-try-docker-bcfafcab0cd9961b96f7a4ff6b961a50.png" />
+</a></div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div class='card card--b mbm'>
+<div class='bucket bucket--flag'>
+<div class='bucket-media'>
+<div class='badge mbm mbf--m'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/197"><img alt="Completed Discover DevTools" class="badge-img" data-original-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/197/completed-discover-devtools-b769c8b681384be3ad04cdf813b4a62c.png" id="badge-197" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/197/completed-discover-devtools-b769c8b681384be3ad04cdf813b4a62c.png" />
+</a></div>
+</div>
+<div class='bucket-content'>
+<ol class='list list--object'>
+<li class='list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/198"><img alt="Level 1 on Discover DevTools" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/198/level-1-on-discover-devtools-f048aefdc0cede79cff1a4ba6dcf3498.png" data-large-badge-id="badge-197" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/198/level-1-on-discover-devtools-f048aefdc0cede79cff1a4ba6dcf3498.png" />
+</a></div>
+</li>
+<li class='list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/199"><img alt="Level 2 on Discover DevTools" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/199/level-2-on-discover-devtools-52287c443e9bdd209aa663f2806b110f.png" data-large-badge-id="badge-197" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/199/level-2-on-discover-devtools-52287c443e9bdd209aa663f2806b110f.png" />
+</a></div>
+</li>
+<li class='list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/200"><img alt="Level 3 on Discover DevTools" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/200/level-3-on-discover-devtools-c8de9b66f985af73c84dc5316ba5f0a7.png" data-large-badge-id="badge-197" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/200/level-3-on-discover-devtools-c8de9b66f985af73c84dc5316ba5f0a7.png" />
+</a></div>
+</li>
+<li class='list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/201"><img alt="Level 4 on Discover DevTools" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/201/level-4-on-discover-devtools-1db49f4cc579cc46c699d40d9030c6e6.png" data-large-badge-id="badge-197" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/201/level-4-on-discover-devtools-1db49f4cc579cc46c699d40d9030c6e6.png" />
+</a></div>
+</li>
+<li class='list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/202"><img alt="Level 5 on Discover DevTools" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/202/level-5-on-discover-devtools-cc71130225e45bd429d527a05391f52f.png" data-large-badge-id="badge-197" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/202/level-5-on-discover-devtools-cc71130225e45bd429d527a05391f52f.png" />
+</a></div>
+</li>
+<li class='list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/203"><img alt="Level 6 on Discover DevTools" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/203/level-6-on-discover-devtools-a3f29b28168635896ed33b944b0f7c7f.png" data-large-badge-id="badge-197" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/203/level-6-on-discover-devtools-a3f29b28168635896ed33b944b0f7c7f.png" />
+</a></div>
+</li>
+<li class='list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/204"><img alt="Level 7 on Discover DevTools" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/204/level-7-on-discover-devtools-9c04cfa5b5c8350b1810fded35a62c45.png" data-large-badge-id="badge-197" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/204/level-7-on-discover-devtools-9c04cfa5b5c8350b1810fded35a62c45.png" />
+</a></div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div class='card card--b mbm'>
+<div class='bucket bucket--flag'>
+<div class='bucket-media'>
+<div class='badge mbm mbf--m'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/121"><img alt="Completed Try Git" class="badge-img" data-original-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/121/completed-try-git-b54d1cd9fa940e4a3c1925056d38eca2.png" id="badge-121" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/121/completed-try-git-b54d1cd9fa940e4a3c1925056d38eca2.png" />
+</a></div>
+</div>
+<div class='bucket-content'>
+<ol class='list list--object'>
+<li class='list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/621"><img alt="Level 1 on Try Git" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/621/level-1-on-try-git-b54d1cd9fa940e4a3c1925056d38eca2.png" data-large-badge-id="badge-121" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/621/level-1-on-try-git-b54d1cd9fa940e4a3c1925056d38eca2.png" />
+</a></div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div class='card card--b mbm'>
+<div class='bucket bucket--flag'>
+<div class='bucket-media'>
+<div class='badge mbm mbf--m'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/169"><img alt="Completed Try R" class="badge-img" data-original-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/169/completed-try-r-ca79ab8225e0b8f81bdfbb622f278f29.png" id="badge-169" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/169/completed-try-r-ca79ab8225e0b8f81bdfbb622f278f29.png" />
+</a></div>
+</div>
+<div class='bucket-content'>
+<ol class='list list--object'>
+<li class='list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/398"><img alt="Level 1 on Try R" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/398/level-1-on-try-r-4e63910f06a5b6b1f93433378f27c1e5.png" data-large-badge-id="badge-169" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/398/level-1-on-try-r-4e63910f06a5b6b1f93433378f27c1e5.png" />
+</a></div>
+</li>
+<li class='list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/171"><img alt="Level 2 on Try R" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/171/level-2-on-try-r-1cfcc8e45a6a9e76a993fa1be5e34ffb.png" data-large-badge-id="badge-169" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/171/level-2-on-try-r-1cfcc8e45a6a9e76a993fa1be5e34ffb.png" />
+</a></div>
+</li>
+<li class='list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/172"><img alt="Level 3 on Try R" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/172/level-3-on-try-r-0c5645d0a3466ad9436513206e0cc5c6.png" data-large-badge-id="badge-169" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/172/level-3-on-try-r-0c5645d0a3466ad9436513206e0cc5c6.png" />
+</a></div>
+</li>
+<li class='list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/173"><img alt="Level 4 on Try R" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/173/level-4-on-try-r-6b38c8d3db1668a9289a34bbebf5e6bd.png" data-large-badge-id="badge-169" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/173/level-4-on-try-r-6b38c8d3db1668a9289a34bbebf5e6bd.png" />
+</a></div>
+</li>
+<li class='list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/174"><img alt="Level 5 on Try R" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/174/level-5-on-try-r-d17d09553b76065061a7aaf79c5648a2.png" data-large-badge-id="badge-169" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/174/level-5-on-try-r-d17d09553b76065061a7aaf79c5648a2.png" />
+</a></div>
+</li>
+<li class='list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/175"><img alt="Level 6 on Try R" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/175/level-6-on-try-r-915ee507d445363194add7029433c9c0.png" data-large-badge-id="badge-169" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/175/level-6-on-try-r-915ee507d445363194add7029433c9c0.png" />
+</a></div>
+</li>
+<li class='list-item'>
+<div class='badge badge--s'>
+<a href="https://www.codeschool.com/users/cryobiochem/badges/176"><img alt="Level 7 on Try R" class="badge-img" data-large-url="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/176/level-7-on-try-r-4b071e224b3d6fe9e6f47e38d731c503.png" data-large-badge-id="badge-169" width="100" src="https://d1ffx7ull4987f.cloudfront.net/images/achievements/large_badge/176/level-7-on-try-r-4b071e224b3d6fe9e6f47e38d731c503.png" />
+</a></div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</main>
+<div class='modal fade modal--sign-in'>
+<div class='modal-dialog'>
+<div class='modal-content'>
+<a class="modal-close close" data-dismiss="modal" href="#"><b class='srt'>Close</b>
+</a><div class='modal-body tac'>
+<h3 class='h h--2 mbxs ptl'>Create a Bookmark</h3>
+<p class='mbl tss twn'>
+In order to bookmark this content, we'll need to add it to a Code
+School&nbsp;account.
+</p>
+<div class='mbm'>
+<a class="btn btn--success" href="/users/sign_up">Create a Free Account</a>
+</div>
+<div class='pbl'>
+<p class='mbf tcs tss'>Already have an account?</p>
+<a class="link link--underline" href="/users/sign_in">Sign in</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<footer class='footer' role='contentinfo'>
+<div class='row'>
+<div class='cell well well--l'>
+<div class='g'>
+<div class='g-b g-b--m--1of2'>
+<div class='g g--s'>
+<div class='g-b g-b--m--1of2 g-b--xl--1of3'>
+<ul class='footer-list list mbs mbm--xl'>
+<li class='list-item oph twb'>Code School</li>
+<li class='list-item'><a class="footer-list-link link list-item-link" href="/learn">Courses</a></li>
+<li class='list-item'><a class="footer-list-link link list-item-link" href="/screencasts">Screencasts</a></li>
+<li class='list-item'><a class="footer-list-link list-item-link" href="https://www.codeschool.com/blog">Blog</a></li>
+<li class='list-item'><a class="footer-list-link list-item-link" href="/pricing">Pricing</a></li>
+<li class='list-item'><a class="footer-list-link list-item-link" href="/pricing/business">For Business</a></li>
+</ul>
+</div>
+<div class='g-b g-b--m--1of2 g-b--xl--1of3'>
+<ul class='footer-list list mbs mbm--xl'>
+<li class='list-item oph twb'>About Us</li>
+<li class='list-item'><a class="footer-list-link list-item-link" href="https://www.codeschool.com/about">Company</a></li>
+<li class='list-item'><a class="footer-list-link list-item-link" href="https://www.codeschool.com/jobs">Jobs</a></li>
+<li class='list-item'><a class="footer-list-link list-item-link" href="https://www.codeschool.com/press">Press</a></li>
+<li class='list-item'><a class="footer-list-link list-item-link" href="https://www.codeschool.com/terms">Terms of Use</a></li>
+<li class='list-item'><a class="footer-list-link list-item-link" href="https://www.codeschool.com/privacy">Privacy Policy</a></li>
+</ul>
+</div>
+<div class='g-b g-b--xl--1of3'>
+<ul class='footer-list list mbm'>
+<li class='list-item oph twb'>Need Help?</li>
+<li class='list-item'><a class="footer-list-link link list-item-link" href="https://www.codeschool.com/contact">Contact Us</a></li>
+<li class='list-item'><a class="footer-list-link list-item-link" href="/support">Knowledge Base</a></li>
+<li class='list-item'><a class="footer-list-link list-item-link" href="https://www.codeschool.com/discuss/">Forum</a></li>
+</ul>
+</div>
+</div>
+<p class='footer-copyright footer-copyright--east'>&copy; 2018 Code School LLC. Crafted lovingly in Orlando, Florida.</p>
+
+<ul class='list iconList mbm mbf--m'>
+<li class='iconList-item'>
+<a class="iconList-item-link footer-list-link" href="https://twitter.com/codeschool"><b class='srt'>Twitter</b>
+<i class='icn icn--twitter iconList-item-icn'></i>
+</a></li>
+<li class='iconList-item'>
+<a class="iconList-item-link footer-list-link" href="https://www.facebook.com/CodeSchool"><b class='srt'>Facebook</b>
+<i class='icn icn--facebook iconList-item-icn'></i>
+</a></li>
+<li class='iconList-item'>
+<a class="iconList-item-link footer-list-link" href="http://instagram.com/codeschool"><b class='srt'>Instagram</b>
+<i class='icn icn--instagram iconList-item-icn'></i>
+</a></li>
+</ul>
+</div>
+<div class='g-b g-b--m--1of2'>
+<div class='footer-about'>
+<div class='mbm'>
+<img alt="Code School" class="mrm" width="200" height="42" src="/assets/logos/logo-code-school-ps-gray-8814d59fc1554fc3f550d3a63157d1a3d7712273de86aeed0e16aadaee2918d1.svg" />
+</div>
+<p class='pts tss'>
+<strong>Code School</strong> teaches web technologies in the
+comfort of your browser with video lessons, coding challenges,
+and screencasts. We strive to help you learn by doing.
+</p>
+<div class='mbm mbl--m'>
+<a class="link link--underline tss" href="https://www.codeschool.com/about">Learn More</a>
+</div>
+<a rel="tooltip" title="Visit pluralsight.com" data-placement="right" aria-label="Leave to pluralsight.com" href="http://www.pluralsight.com/"><img alt="Pluralsight" class="db mbs mbf--m" src="/assets/logos/logo-pluralsight-gray-aabf17376e35e285b0d8726d8422bc5a8cea1d307c9bee47d1956537752fdfa9.svg" />
+</a><a title="TRUSTe Privacy Certification" class="fr" target="_blank" href="https://privacy.truste.com/privacy-seal/validation?rid=c0423e68-cb98-4cad-bfb9-0c97166bb786"><img alt="TRUSTe Privacy Certification" src="https://privacy-policy.truste.com/privacy-seal/seal?rid=c0423e68-cb98-4cad-bfb9-0c97166bb786" />
+</a><p class='footer-copyright footer-copyright--south'>&copy; 2018 Code School LLC. Crafted lovingly in Orlando, Florida.</p>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+
+<script src="/assets/application-7631b11a3b7d3b4a8ab552564fb82d8fc5ad3a2bd54e13afb750e7618366e790.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var _gaq = _gaq || [];
+_gaq.push(['ua97407499._require', 'inpage_linkid', '//www.google-analytics.com/plugins/ga/inpage_linkid.js']);_gaq.push(['ua974074923._require', 'inpage_linkid', '//www.google-analytics.com/plugins/ga/inpage_linkid.js']);
+_gaq.push(['ua97407499._setAccount', 'UA-9740749-9']);_gaq.push(['ua974074923._setAccount', 'UA-9740749-23']);
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+var _gaq = _gaq || [];
+_gaq.push(['ua97407499._trackPageview', '/account/prizes']);
+_gaq.push(['ua974074923._trackPageview', '/account/prizes']);/* ]]> */
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "WebSite",
+  "url": "https://www.codeschool.com/",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://www.codeschool.com/search?query={search_term_string}&rel=sitelinks",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
+<script type="text/javascript">
+  _linkedin_data_partner_id = "57231";
+</script>
+<script type="text/javascript">
+  (function(){var s = document.getElementsByTagName("script")[0];
+  var b = document.createElement("script");
+  b.type = "text/javascript"; b.async = true;
+  b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+  s.parentNode.insertBefore(b, s);})();
+</script>
+<noscript>
+  <img height="1" width="1" style="display:none;" alt="" src="https://dc.ads.linkedin.com/collect/?pid=57231&fmt=gif" />
+</noscript>
+
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1359001260804431');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1359001260804431&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+
+
+
+
+</body>
